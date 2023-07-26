@@ -1,0 +1,341 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+  padding: 35px;
+  margin: 0px;
+}
+
+h1,
+h3 {
+  font-size: 1.8em;
+  line-height: 1.1;
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
+  color: #f9f9f9;
+}
+
+span,
+p {
+  color: #f9f9f9;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+#root {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div {
+  display: flex;
+  gap: 10px;
+}
+
+.boxDashboards {
+  padding: 30px;
+  background-color: #131313;
+  width: 320px;
+  height: 150px;
+  color: #ffffff;
+}
+
+.itensInformation {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.sectionDashboard {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 90px;
+  padding-bottom: 20px;
+}
+
+.dadosItens {
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.blackBarGrid {
+  background-color: #111111;
+  display: grid;
+  padding: 20px;
+  width: 98%;
+  grid-template-columns: 25% 17% 15% 15% 15%;
+}
+
+.blackBar {
+  background-color: #111111;
+  display: flex;
+  padding: 20px;
+  width: 98%;
+  justify-content: space-around;
+
+}
+
+.blackBarSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.SpanItens {
+  margin-top: 28px;
+  margin-left: 37px;
+}
+
+.container {
+  display: flex;
+}
+
+.btnVer {
+  margin-top: 25px;
+  height: 50px;
+}
+
+
+.ver {
+  display: grid;
+  grid-template-columns: 15% 60% 17%;
+}
+
+.endingItems {
+  display: grid;
+  grid-template-columns: 10% 40% 30% 20%;
+}
+
+.navItens {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+.dadosGrid {
+  display: grid;
+  grid-template-columns: 25% 19% 13% 13% 5%;
+  padding-left: 9px;
+}
+
+.btnsItem {
+  display: flex;
+  gap: 20px;
+}
+
+.sectionItem {
+  display: flex;
+  gap: 30px;
+
+}
+
+.infoItem {
+  display: flex;
+  background-color: #161616;
+  align-items: center;
+  width: 20%;
+  padding: 20px;
+}
+
+.dataItem {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+label {
+  color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+  align-items: center;
+}
+
+input {
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  width: 50%;
+}
+
+textarea {
+  width: 50%;
+}
+
+.btnSalvar {
+  height: 60px;
+  width: 20%;
+  background-color: #747bff;
+}
+
+footer {
+  margin-top: 150px;
+  width: 80%;
+}
+
+@media (max-width: 1000px) {
+  .dadosItens {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .blackBarGrid {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .dadosGrid {
+    display: flex;
+    justify-content: space-around;
+
+  }
+}
+
+@media (max-width: 600px) {
+
+  .recentes,
+  .acabando {
+    width: 100%;
+  }
+
+  .btnVer {
+    margin-right: -20px;
+  }
+
+  .dadosGrid span {
+    font-size: 10px;
+  }
+
+  .dadosGrid {
+    gap: 2px;
+  }
+
+  .blackBarGrid {
+    width: 100%;
+
+  }
+
+  .btns {
+    margin-right: -30px;
+  }
+
+  .btnVer,
+  .btnEdit,
+  .btnExcluir {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .blackBarGrid {
+    margin-left: -5px;
+  }
+
+  .sectionItem {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .btnsItem {
+    flex-direction: column;
+  }
+
+}
